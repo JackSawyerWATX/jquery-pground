@@ -1,0 +1,3 @@
+# jQuery Playground
+
+- This project is a simple jQuery playground that showcases basic HTML structure and button interactions. It consists of two columns, each containing three buttons within "well" containers. The left column is labeled #left-well and the right column is labeled #right-well. Each button is uniquely identified with an id (e.g., #target1, #target2, etc.) and is styled using Bootstrap's default button classes. The project is designed to serve as a starting point for experimenting with jQuery interactions and DOM manipulation.
