@@ -5,28 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./jquery-3.7.1.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <title>jQuery</title>
 </head>
 
 <script>
     $(document).ready(function () {
-        $("button").addClass("animated bounce");
-        $(".well").addClass("animated shake");
-        $("#target1").addClass("animated fadeOut");
-        $("#target2").css("color", "red");
-        $("#target3").prop("disabled", true);
+        $("button").addClass("animate__animated animate__bounce");
+        $(".well").addClass("animate__animated animate__shakeX");
+        $("#target3").addClass("animate__animated animate__fadeOut");
+        $("#target1").css("color", "red");
+        $("#target2").prop("disabled", true);
         $("#target4").html("<em>#target4</em>");
         $("#target5").remove();
-        $("#target6").appendTo("#right-well");
-        $("#target3").clone().appendTo("#right-well");
+        $("#target3").appendTo("#right-well");
+        $("#target3").clone().attr("id", "target3-clone").appendTo("#left-well");
         $("#target1").parent().css("background-color", "blue");
-        $("#target4").parent().css("background-color", "orange");
         $("#left-well").children().css("color", "orange");
-        $("#right-well").children().css("color", "blue");
-        $(".target:nth-child(2)").addClass("animated bounce");
-        $(".target:even").addClass("animated shake");
-        $("body").addClass("animated hinge")
+        $(".target:nth-child(2)").addClass("animate__animated animate__bounce");
+        $(".target:even").addClass("animate__animated animate__shakeX");
     });
 </script>
 
